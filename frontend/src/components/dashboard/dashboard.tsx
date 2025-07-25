@@ -25,13 +25,13 @@ export default function DashboardPage() {
       <XpSection />
 
       <div className="flex mx-10 mt-15 justify-center gap-5">
-        <Button className="w-70 h-15 text-xl"><Link href="/workout">+ Log Workout</Link></Button>
-        <Button className="w-70 h-15 text-xl">View All Workout</Button>
+        <Button className="w-70 h-15 text-xl"><Link href="/workout/create">+ Log Workout</Link></Button>
+        <Button className="w-70 h-15 text-xl"><Link href="/workout">View All Workout</Link></Button>
       </div>
       <div>
         <h1 className="font-bold text-3xl mt-15">Recent Workout</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-15 mt-10">
-          {data.map((workout: WorkoutSchemaDTO) => (
+          {data.slice(0, 2).map((workout: WorkoutSchemaDTO) => (
             <div key={workout.id}>
               <WorkoutCard {...workout} />
             </div>

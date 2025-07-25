@@ -14,3 +14,7 @@ export type Workout = {
   calories_burned:number
   date:string
 };
+
+export type DeleteDTO = {
+ id:number
+}

@@ -33,6 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
+          
           <ModeToggle />
            <Toaster position="bottom-right" richColors />
           {children}

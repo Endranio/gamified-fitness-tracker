@@ -1,6 +1,5 @@
 "use client";
 
-import { Xp } from "@/dto/dto";
 import { api } from "@/lib/api";
 import { WorkoutSchemaDTO } from "@/schema/workout-schema";
 

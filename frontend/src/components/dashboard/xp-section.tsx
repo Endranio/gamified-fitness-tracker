@@ -35,7 +35,7 @@ if (!data)return
         <div className="mt-10">
             <div className="flex justify-between mb-5">
                 <p className="text-xl text-white">Level to {data?.level+ 1}</p>
-                <p className="text-xl text-white">{data?.xp % 1000}/1000 XP</p>
+                <p className="text-xl text-white">{data?.xp % 500}/500 XP</p>
             </div>
             <Progress value={data?.progress}  className="h-3 [&>*]:bg-white"/>
         </div>

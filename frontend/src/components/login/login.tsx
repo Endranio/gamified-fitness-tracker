@@ -12,7 +12,7 @@ export default function LoginPage() {
   const { errors, isPending, onSubmit, register } = UseLogin();
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="shadow-2xl bor dark:bg-gray-800 p-10 rounded-xl space-y-6">
+      <div className="shadow-2xl  dark:bg-gray-800 p-10 rounded-xl space-y-6">
         <div className="flex flex-col gap-3 items-center">
           <h1 className="font-bold text-3xl">Welcome Back</h1>
           <p className="text-xl">Sign in to continue your fitness journey</p>
